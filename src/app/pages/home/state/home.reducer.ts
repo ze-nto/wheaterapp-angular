@@ -10,32 +10,34 @@ export interface HomeState {
 
 export const homeInitialState: HomeState = {
   entity: undefined,
-  loading: false,
-  error: false,
+  loading: false, 
+  error: false
+ 
 }
 
 const reducer = createReducer(
   homeInitialState,
   on(fromHomeActions.clearHomeState, () => homeInitialState),
-  on(
-    fromHomeActions.loadCurrentWeather,
-    fromHomeActions.loadCurrentWeatherById,
+  on(fromHomeActions.loadCurrentWeather, 
+    fromHomeActions.loadCurrentWeatherById, 
     state => ({
-      ...state,
-      loading: true,
-      error: false,
-    }),
-  ),
+    ...state,
+    loading: true,
+    error: false,
+  })),
+  
   on(fromHomeActions.loadCurrentWeatherSuccess, (state, { entity }) => ({
     ...state,
     entity,
-    loading: false,
+    loading: false
   })),
+
   on(fromHomeActions.loadCurrentWeatherFailed, state => ({
     ...state,
     loading: false,
-    error: true,
+    error: true
   })),
+
 );
 
 export function homeReducer(state: HomeState | undefined, action: Action): HomeState {

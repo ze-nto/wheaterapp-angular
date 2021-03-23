@@ -15,4 +15,8 @@ export const toggleBookmarById = createAction(
 export const updateBookmarksList = createAction(
   '[Bookmarks] Update Bookmarks List',
   props<{ list: Bookmark[] }>(),
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> app-state-02

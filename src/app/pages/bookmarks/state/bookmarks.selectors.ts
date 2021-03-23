@@ -7,4 +7,8 @@ export const selectBookmarksState = createFeatureSelector('bookmarks');
 export const selectBookmarksList = createSelector(
   selectBookmarksState,
   (bookmarksState: BookmarksState) => bookmarksState.list,
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> app-state-02

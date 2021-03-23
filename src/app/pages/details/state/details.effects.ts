@@ -40,4 +40,8 @@ export class DetailsEffects {
               private store: Store<AppState>,
               private weatherService: WeatherService) {
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> app-state-02

@@ -17,4 +17,8 @@ export const selectDetailsLoading = createSelector(
 export const selectDetailsError = createSelector(
   selectDetailsState,
   (detailsState: DetailsState) => detailsState.error,
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> app-state-02

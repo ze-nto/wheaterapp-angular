@@ -43,4 +43,8 @@ export class BookmarksEffects {
               private store: Store<AppState>,
               private weatherService: WeatherService) {
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> app-state-02

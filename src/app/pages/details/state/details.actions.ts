@@ -9,4 +9,9 @@ export const loadWeatherDetailsSuccess = createAction(
   props<{ entity: CityDailyWeather }>(),
 );
 
+<<<<<<< HEAD
 export const loadWeatherDetailsFailed = createAction('[Details] Load Weather Details Failed');
+=======
+export const loadWeatherDetailsFailed = createAction(
+  '[Details] Load Weather Details Failed');
+>>>>>>> app-state-02

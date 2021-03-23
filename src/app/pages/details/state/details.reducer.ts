@@ -37,4 +37,8 @@ const reducer = createReducer(
 
 export function detailsReducer(state: DetailsState | undefined, action: Action): DetailsState {
   return reducer(state, action);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> app-state-02

@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-
-import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
-
 import { DetailsPage } from './containers/details/details.page';
-import { DetailsGuard } from './services/details.guard';
-import { detailsReducer } from './state/details.reducer';
-import { DetailsEffects } from './state/details.effects';
+import { RouterModule } from '@angular/router';
+import { DetailsGuard } from 'src/app/pages/details/services/details.guard';
+import { StoreModule } from '@ngrx/store';
 import { ComponentsModule } from 'src/app/shared/components/components.module';
+import { EffectsModule } from '@ngrx/effects';
+import { detailsReducer } from 'src/app/pages/details/state/details.reducer';
+import { DetailsEffects } from 'src/app/pages/details/state/details.effects';
 import { DailyWeatherComponent } from './components/daily-weather/daily-weather.component';
+
 
 @NgModule({
   imports: [

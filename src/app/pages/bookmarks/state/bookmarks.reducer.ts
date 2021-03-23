@@ -37,4 +37,8 @@ function toggleBookmark(list: Bookmark[], entity: Bookmark): Bookmark[] {
     return list.filter(bookmark => bookmark.id !== entity.id);
   }
   return [...list, entity];
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> app-state-02

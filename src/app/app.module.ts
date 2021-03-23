@@ -13,8 +13,9 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { BookmarksModule } from './pages/bookmarks/bookmarks.module';
 import { environment } from '../environments/environment';
-import { reducers } from './shared/state/app.reducer';
-import { CustomRouterSerializer } from './shared/state/router/router.reducer';
+import { reducers } from 'src/app/shared/state/app.reducer';
+import { CustomRouterSerializer } from 'src/app/shared/state/router/router.reducer';
+import { CityTypeaheadComponent } from './shared/components/city-typeahead/city-typeahead.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CustomRouterSerializer } from './shared/state/router/router.reducer';
     StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([]),
-    StoreRouterConnectingModule.forRoot({ serializer: CustomRouterSerializer }),
+    StoreRouterConnectingModule.forRoot({serializer: CustomRouterSerializer}),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
